@@ -9,5 +9,4 @@ module.exports = withNextra({
     defaultLocale: 'he'
   },
   distDir: 'dist',
-  pageExtensions: ['mdx']
 })

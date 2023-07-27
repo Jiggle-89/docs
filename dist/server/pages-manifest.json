@@ -1,12 +1,12 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/he/404": "pages/he/404.html",
   "/he/500": "pages/he/500.html",
-  "/he/another.he": "pages/he/another.he.html",
-  "/he/advanced.he": "pages/he/advanced.he.html",
-  "/he/index.he": "pages/he/index.he.html",
   "/he/about.he": "pages/he/about.he.html",
-  "/he/advanced/satori.he": "pages/he/advanced/satori.he.html"
+  "/he/advanced.he": "pages/he/advanced.he.html",
+  "/he/another.he": "pages/he/another.he.html",
+  "/he/advanced/satori.he": "pages/he/advanced/satori.he.html",
+  "/he/index.he": "pages/he/index.he.html"
 }
