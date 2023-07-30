@@ -1,22 +1,15 @@
 {
-  "index": {
-    "title": "Home",
+  "*": {
     "theme": {
-      "breadcrumb": false,
-      "footer": false,
-      "pagination": false
+      "footer": false
     }
   },
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+  "index": {
+    "title": "ברוכים הבאים",
+    "theme": {
+      "footer": true
+    }
   }
+
+
 }

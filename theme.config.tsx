@@ -14,19 +14,24 @@ const config: DocsThemeConfig = {
       <span>תקינה וארגון</span>
     ),
   },
+  toc: {
+    title: 'תוכן עניינים'
+  },
   feedback: { // keep null to hide feedback button
     content: null
   },
   editLink: { // keep null to hide the edit this page button
     text: null
   },
-  i18n: [
-    { locale: 'he', text: 'עברית', direction: 'rtl' },
-  ],
+  //! deprecated for now
+  //! i18n: [
+  //!   { locale: 'he', text: 'עברית'},
+  //! ],
   search: {
     placeholder: 'חפש...',
   },
-  gitTimestamp: null //keep null to hide last updated
+  direction: 'rtl',
+  gitTimestamp: null // keep null to hide last updated
 }
 
 export default config
