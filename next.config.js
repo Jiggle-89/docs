@@ -8,4 +8,7 @@ module.exports = withNextra({
     locales: ['he'],
     defaultLocale: 'he',
   },
+  // hide powered by vercel
+  poweredByHeader: false,
+  // hide nextra docs template footer
 })
