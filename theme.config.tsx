@@ -2,23 +2,31 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>תקינה וארגון</span>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: null
   },
   chat: {
     link: 'https://discord.com',
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
   footer: {
-    text: 'Nextra Docs Template',
+    text: (
+      <span>תקינה וארגון</span>
+    ),
+  },
+  feedback: { // keep null to hide feedback button
+    content: null
+  },
+  editLink: { // keep null to hide the edit this page button
+    text: null
   },
   i18n: [
     { locale: 'he', text: 'עברית', direction: 'rtl' },
   ],
   search: {
     placeholder: 'חפש...',
-  }
+  },
+  gitTimestamp: null //keep null to hide last updated
 }
 
 export default config
