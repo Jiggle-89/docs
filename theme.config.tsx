@@ -4,7 +4,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 const config: DocsThemeConfig = {
   logo: <span>תקינה וארגון</span>,
   project: {
-    link: null
+    icon: null
   },
   chat: {
     link: 'https://discord.com',
