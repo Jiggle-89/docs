@@ -1,18 +1,22 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import webIcon from './components/webIcon.png'
 
 const config: DocsThemeConfig = {
   logo: <span>תקינה וארגון</span>,
-  project: {
-    icon: null
-  },
   chat: {
-    link: 'https://discord.com',
+    link: 'https://toarpquiz.web.app',
+    icon: (
+      <img src={webIcon.src} alt="webIcon" />
+    )
   },
   footer: {
     text: (
       <span>תקינה וארגון</span>
     ),
+  },
+  toc: {
+    title: 'תוכן עניינים'
   },
   feedback: { // keep null to hide feedback button
     content: null
@@ -20,13 +24,15 @@ const config: DocsThemeConfig = {
   editLink: { // keep null to hide the edit this page button
     text: null
   },
-  i18n: [
-    { locale: 'he', text: 'עברית', direction: 'rtl' },
-  ],
+  //! deprecated for now
+  //! i18n: [
+  //!   { locale: 'he', text: 'עברית'},
+  //! ],
   search: {
     placeholder: 'חפש...',
   },
-  gitTimestamp: null //keep null to hide last updated
+  direction: 'rtl',
+  gitTimestamp: null // keep null to hide last updated
 }
 
 export default config

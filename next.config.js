@@ -4,11 +4,10 @@ const withNextra = require('nextra')({
 })
 
 module.exports = withNextra({
-  i18n: {
-    locales: ['he'],
-    defaultLocale: 'he',
-  },
-  // hide powered by vercel
+  // ! deprecated for now
+  //! i18n: {
+  //!   locales: ['he'],
+  //!   defaultLocale: 'he',
+  //! },
   poweredByHeader: false,
-  // hide nextra docs template footer
 })
