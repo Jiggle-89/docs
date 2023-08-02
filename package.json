@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/shuding/nextra-docs-template#readme",
   "dependencies": {
+    "@ant-design/icons": "^5.2.3",
+    "@emotion/css": "^11.11.2",
+    "antd": "^5.7.3",
     "next": "^13.0.6",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
