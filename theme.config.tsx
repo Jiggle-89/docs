@@ -1,13 +1,13 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import webIcon from './components/webIcon.png'
+import webIcon from './components/smartphone.png'
 
 const config: DocsThemeConfig = {
   logo: <span>תקינה וארגון</span>,
   chat: {
     link: 'https://toarpquiz.web.app',
     icon: (
-      <img src={webIcon.src} alt="webIcon" />
+      <img src={webIcon.src} alt="landIcon" height="30px" width="30px"/>
     )
   },
   footer: {
