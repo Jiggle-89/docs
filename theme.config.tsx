@@ -1,20 +1,32 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import webIcon from './components/smartphone.png'
+import agatIcon from './components/agat.png'
 
 const config: DocsThemeConfig = {
-  logo: <span>תקינה וארגון</span>,
-  chat: {
-    link: 'https://toarpquiz.web.app',
-    icon: (
-      <img src={webIcon.src} alt="landIcon" height="30px" width="30px"/>
-    )
-  },
+  logo: <>
+    <img src={agatIcon.src} alt="landIcon" height="35px" width="35px"/>
+    <span style={{marginRight: '5px', fontSize: '16px'}}>אוגדן תקינה וארגון</span>
+  </>,
+  // chat: {
+  //   link: 'https://toarpquiz.web.app',
+  //   icon: (
+  //     <img src={webIcon.src} alt="landIcon" height="30px" width="30px"/>
+  //   )
+  // },
   footer: {
     text: (
-      <span>תקינה וארגון</span>
+      <div style={{textAlign: 'center', justifyContent: 'center'}}>
+        <span>תקינה וארגון בצה"ל</span>
+      </div>
     ),
   },
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </>
+    // insert favicon here in the future using <link rel="icon" href="agatIcon.src"> for example
+  ),
   toc: {
     title: 'תוכן עניינים'
   },
