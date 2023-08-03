@@ -21,6 +21,12 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
+  head: (
+    <>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </>
+    // insert favicon here in the future using <link rel="icon" href="agatIcon.src"> for example
+  ),
   toc: {
     title: 'תוכן עניינים'
   },
