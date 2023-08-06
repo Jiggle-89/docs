@@ -2,6 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import webIcon from './components/smartphone.png'
 import agatIcon from './components/agat.png'
+import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
   logo: <>
@@ -44,6 +45,15 @@ const config: DocsThemeConfig = {
     placeholder: 'חפש...',
   },
   direction: 'rtl',
+
+  // this SEO is used for the page title
+  useNextSeoProps() {
+    const {asPath} = useRouter()
+    if (asPath != '/')
+      return {
+        titleTemplate: '%s - תוא"ר',
+      } 
+  },
   gitTimestamp: null // keep null to hide last updated
 }
 
