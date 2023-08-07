@@ -37,10 +37,6 @@ const config: DocsThemeConfig = {
   editLink: { // keep null to hide the edit this page button
     text: null
   },
-  //! deprecated for now
-  //! i18n: [
-  //!   { locale: 'he', text: 'עברית'},
-  //! ],
   search: {
     placeholder: 'חפש...',
   },
