@@ -38,6 +38,10 @@ const config: DocsThemeConfig = {
   editLink: { // keep null to hide the edit this page button
     text: null
   },
+  sidebar: {
+    toggleButton: true,
+    autoCollapse: true
+  },
   search: {
     placeholder: 'חפש...',
   },
