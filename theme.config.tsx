@@ -29,7 +29,8 @@ const config: DocsThemeConfig = {
     // insert favicon here in the future using <link rel="icon" href="agatIcon.src"> for example
   ),
   toc: {
-    title: 'תוכן עניינים'
+    title: 'תוכן עניינים',
+    float: true
   },
   feedback: { // keep null to hide feedback button
     content: null
