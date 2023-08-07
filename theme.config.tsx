@@ -39,8 +39,7 @@ const config: DocsThemeConfig = {
     text: null
   },
   sidebar: {
-    toggleButton: true,
-    autoCollapse: true
+    toggleButton: true
   },
   search: {
     placeholder: 'חפש...',
