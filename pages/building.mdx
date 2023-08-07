@@ -6,9 +6,12 @@ title: בניין הכוח ועקרונות הארגון
 
 פרק זה מחולק לכמה חלקים ויסביר בפירוט את כל חלקי בניין הכוח ועקרונות הארגון בצה"ל.
 
-import {Button, Space} from 'antd'
+import {Cards, Card} from 'nextra/components'
+import {TeamOutlined} from '@ant-design/icons'
 
-<Space wrap>
-  <Button style={{ height: '50px', display: 'flex', alignItems: 'center'}} ghost href="/building/milorg">ארגון צבאי</Button>
-</Space>
+<Cards>
+  <Card title="ארגון צבאי" href="building/milorg" icon={<TeamOutlined style={{fontSize: '24px'}} />} />
+  <Card title='תהליך התכנון בצה"ל' href="building/plan" />
+</Cards>
+
 
