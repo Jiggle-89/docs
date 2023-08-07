@@ -4,4 +4,15 @@ title: מבנה הצבא ומדרג הפקודות
 
 ## מבנה הצבא ומדרג הפקודות
 
-פרק זה ידבר על מבנה הצבא ומדרג הפקודות
+פרק זה עוסק בסוג ומדרג הפקודות הקיימות בצה"ל, על המבנה וההיסטוריה שלו וירחיב מעט על עמ"ט הרגולציה
+
+import {Cards, Card} from 'nextra/components'
+import hierarchy from 'components/hierarchy.png'
+import military from 'components/militaryman.png'
+import regulation from 'components/regulation.png'
+
+<Cards>
+  <Card style={{fontSize: '18px'}} title="מבנה הצבא" href="orderstructure/structure" icon={<img src={hierarchy.src} width="28" height="28" />}/>
+  <Card style={{fontSize: '18px'}} title='מדרג הפקודות' href="orderstructure/orders" icon={<img src={military.src} width="28" height="28" />} />
+  <Card style={{fontSize: '18px'}} title='עמ"ט הרגולציה' href="orderstructure/regulation" icon={<img src={regulation.src} width="28" height="28" />} />
+</Cards>
