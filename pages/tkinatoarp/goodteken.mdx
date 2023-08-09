@@ -5,6 +5,9 @@ title: תקנון נכון- איך עושים את זה?
 import ashratyota from 'components/ashratyota.png'
 import deepteken from 'components/deepteken.png'
 import flatteken from 'components/flatteken.png'
+import checkmark from 'components/checkmark.png'
+import closeteken from 'components/closeteken.png'
+import niudteken from 'components/niudteken.png'
 
 import {Callout} from 'nextra/components'
 import {Tabs, Tab} from 'nextra/components'
@@ -77,7 +80,41 @@ import {Tabs, Tab} from 'nextra/components'
 </Callout>*/}
 
 
-<Tabs items={['אל תעשה', 'כן תעשה']}>
-   <Tab><Callout type="error"><span style={{color: 'red', fontSize: '22px'}}>אל תעשה:</span>"תקנון שטוח" כל התקנים נמצאים באותה המסגרת ללא הפרדה של היררכיה – לא ניתן לדעת מי כפוף למי בתוך המסגרת.<img src={flatteken.src} /></Callout></Tab>
-   <Tab><Callout type="info"><span style={{color: 'green', fontSize: '22px'}}>כן תעשה:</span>תקנון לעומק - מפקדים מעל הכפופים אליהם<img src={deepteken.src} /></Callout></Tab>
+<Tabs items={['לא תעשה', 'כן תעשה']}>
+   <Tab><Callout type="error"><span style={{color: 'red', fontSize: '22px'}}>לא תעשה:<br /></span>"תקנון שטוח" כל התקנים נמצאים באותה המסגרת ללא הפרדה של היררכיה – לא ניתן לדעת מי כפוף למי בתוך המסגרת.<img src={flatteken.src} /></Callout></Tab>
+   <Tab><Callout emoji={<img src={checkmark.src} width="32" height="32"/>} type="info"><span style={{color: 'green', fontSize: '22px'}}>כן תעשה:<br /></span>תקנון לעומק - מפקדים מעל הכפופים אליהם<img src={deepteken.src} /></Callout></Tab>
 </Tabs>
+
+#### תחימה מול איפוס
+
+ישנה אפשרות לאפס את מונה ההקצאה של תקן. מטרת האיפוס היא לשקף מצב בו קיים צורך ארגוני לתקן אך לא קיים משאב למולו (איוש.) אין להשתמש באיפוס כחליף לתחימה של תקן – כאשר לא קיים עוד צורך ארגוני בתקן - יש להשתמש אך ורק בתחימת התקן – כך קיים לתקן תאריך סיום עבור כלל מערכות 
+ERP (משא"ן, תקינה וכו') ובא לידי ביטוי המבנה הארגוני המיטבי. 
+
+
+#### תיאור תקן
+
+<Callout type="error"><span style={{color: 'red'}}>אל תעשה: </span>שם משרה גנרי כמו 'המפקד' ,'הרמ"ד', 'המש"ק 'וכו.' </Callout>
+
+<Callout type="info" emoji={<img src={checkmark.src} width="32" height="32"/>}><span style={{color: 'green'}}>כן תעשה: </span>מפקד טייסת x, רמ"ד y', 'מש"ק מערכת ' xy.</Callout>
+
+#### ניוד תקן
+
+<Tabs items={['לא תעשה', 'כן תעשה']}>
+   <Tab><Callout type="error"><span style={{color: 'red', fontSize: '22px'}}>לא תעשה:<br /></span>תחימת תקן ופתיחת תקן חדש במקום.<img src={closeteken.src}/></Callout></Tab>
+   <Tab><Callout emoji={<img src={checkmark.src} width="32" height="32"/>} type="info"><span style={{color: 'green', fontSize: '22px'}}>כן תעשה:<br /></span>ניוד תקן – כך היסטורית התקן נשמרת. המהלך משקף את הפעולה בצורה מיטבית לתיחקור היסטורי( בנוסף - מונע פגיעה בפרט).<img src={niudteken.src} /></Callout></Tab>
+</Tabs>
+
+#### מדרג פיקודי
+
+זהו שדה רשות לתקנים – אך מומלץ למלא בו את הערך הרלוונטי לתקן. דוגמה טובה לשימוש נכון בשדה מדרג פיקודי: תקן ששם המשרה שלו הוא מפקד פלוגת x  - נוכל לתת לו מדרג של מ"פ חי"ר. כך הוספת השדה מדגישה את מהות התקן.   
+
+#### התמחות
+
+בדומה למדרג פיקודי לתקן - זהו שדה רשות לתקנים והוא משלים אותו באופן מסויים. מטרת השדה היא להוסיף לתקן סימון מקצועי : למשל  "שליש יחידה "בהתמחות "מרגמות". מעבר לכך שהוספת השדה הופכת את מהות התקן ליותר ברור , ניתן עכשיו לבצע שאילתה לפי להציג את כל התקנים בצה"ל לפי התמחות. 
+
+### אחריות
+
+1) אחריות למימוש: רמ"ד תוא"ר בכל סמכות  - על הרמ"ד לוודא כי קמ"די ומש"קי התוא"ר מתקננים לפי דגשים אלו. 
+
+2) אחריות להדרכה תמיכה ותיקוף הדגשים: על ידי מרכז תוRP באג"ת   
+
