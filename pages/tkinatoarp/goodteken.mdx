@@ -5,6 +5,7 @@ title: תקנון נכון- איך עושים את זה?
 import ashratyota from 'components/ashratyota.png'
 import deepteken from 'components/deepteken.png'
 import flatteken from 'components/flatteken.png'
+import checkmark from 'components/checkmark.png'
 
 import {Callout} from 'nextra/components'
 import {Tabs, Tab} from 'nextra/components'
@@ -77,7 +78,7 @@ import {Tabs, Tab} from 'nextra/components'
 </Callout>*/}
 
 
-<Tabs items={['אל תעשה', 'כן תעשה']}>
-   <Tab><Callout type="error"><span style={{color: 'red', fontSize: '22px'}}>אל תעשה:</span>"תקנון שטוח" כל התקנים נמצאים באותה המסגרת ללא הפרדה של היררכיה – לא ניתן לדעת מי כפוף למי בתוך המסגרת.<img src={flatteken.src} /></Callout></Tab>
-   <Tab><Callout type="info"><span style={{color: 'green', fontSize: '22px'}}>כן תעשה:</span>תקנון לעומק - מפקדים מעל הכפופים אליהם<img src={deepteken.src} /></Callout></Tab>
+<Tabs items={['לא תעשה', 'כן תעשה']}>
+   <Tab><Callout type="error"><span style={{color: 'red', fontSize: '22px'}}>לא תעשה:<br /></span>"תקנון שטוח" כל התקנים נמצאים באותה המסגרת ללא הפרדה של היררכיה – לא ניתן לדעת מי כפוף למי בתוך המסגרת.<img src={flatteken.src} /></Callout></Tab>
+   <Tab><Callout emoji={<img src={checkmark.src} width="32" height="32"/>} type="info"><span style={{color: 'green', fontSize: '22px'}}>כן תעשה:<br /></span>תקנון לעומק - מפקדים מעל הכפופים אליהם<img src={deepteken.src} /></Callout></Tab>
 </Tabs>
