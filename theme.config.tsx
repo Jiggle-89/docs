@@ -22,6 +22,15 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
+  themeSwitch: {
+    useOptions() {
+      return {
+        light: 'בהיר',
+        dark: 'כהה',
+        system: 'מערכת'
+      }
+    }
+  },
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +49,6 @@ const config: DocsThemeConfig = {
   },
   sidebar: {
     toggleButton: true,
-    defaultMenuCollapseLevel: 3
   },
   search: {
     placeholder: 'חפש...',
