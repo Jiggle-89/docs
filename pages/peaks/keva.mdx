@@ -212,10 +212,7 @@ import formula from 'components/formula.png'
 
 
 
-<Bleed>
-   <MyTable/>
-</Bleed>
-
+<MyTable/>
 
 3) שיאים זמניים ותק"י הינם שיאים שניתנים לתקופה מוגבלת לאור צורך ארגוני בהתאם להחלטות מחלקת ארגון, ראה פירוט בנוהל 2.6 ו-2.7. 
 
@@ -250,45 +247,46 @@ import formula from 'components/formula.png'
 
 
 
-import {Steps} from 'nextra/components'
 import {Callout} from 'nextra/components'
 import {Bleed} from 'nextra-theme-docs'
 
 
 import react from 'react'
 export const MyTable = () => (
-<table>
-   <tbody>
-      <tr>
-         <th>סוג שיא</th>
-         <th>גורם מאשר השיא</th>
-         <th>גורם ממליץ</th>
-         <th>הערות</th>
-      </tr>
+<Bleed>
+   <table>
+      <tbody>
+         <tr>
+            <th>סוג שיא</th>
+            <th>גורם מאשר השיא</th>
+            <th>גורם ממליץ</th>
+            <th>הערות</th>
+         </tr>
 
-      <tr>
-         <td style={{ textAlign: 'center' }}>אל"מ ומעלה</td>
-         <td style={{ textAlign: 'center' }}>הרמטכ"ל</td>
-         <td style={{ textAlign: 'center' }} rowSpan="3">אג"ת/ארגון</td>
-         <td style={{ textAlign: 'center' }} rowSpan="3">מחייב הסדרה ארגונית- הצגת ייעוד תפקידים ומבנה ארגוני כמפורט בהוראת קבע אג"ת מספר 06/10 "הגדרת כללים לכתיבת/פרסום פקודות ארגון"</td>
-      </tr>
+         <tr>
+            <td style={{ textAlign: 'center' }}>אל"מ ומעלה</td>
+            <td style={{ textAlign: 'center' }}>הרמטכ"ל</td>
+            <td style={{ textAlign: 'center' }} rowSpan="3">אג"ת/ארגון</td>
+            <td style={{ textAlign: 'center' }} rowSpan="3">מחייב הסדרה ארגונית- הצגת ייעוד תפקידים ומבנה ארגוני כמפורט בהוראת קבע אג"ת מספר 06/10 "הגדרת כללים לכתיבת/פרסום פקודות ארגון"</td>
+         </tr>
 
-      <tr>
-         <td style={{ textAlign: 'center' }}>סא"ל בסדיר</td>
-         <td style={{ textAlign: 'center' }}>ר' אג"ת</td>
-      </tr>
+         <tr>
+            <td style={{ textAlign: 'center' }}>סא"ל בסדיר</td>
+            <td style={{ textAlign: 'center' }}>ר' אג"ת</td>
+         </tr>
 
-      <tr>
-         <td style={{ textAlign: 'center' }}>מובהק</td>
-         <td style={{ textAlign: 'center' }}>רח"ט תכנון</td>
-      </tr>
+         <tr>
+            <td style={{ textAlign: 'center' }}>מובהק</td>
+            <td style={{ textAlign: 'center' }}>רח"ט תכנון</td>
+         </tr>
 
-      <tr>
-         <td style={{ textAlign: 'center' }}>ראשוני</td>
-         <td style={{ textAlign: 'center' }}>אג"ת/ארגון</td>
-         <td style={{ textAlign: 'center' }}>-------</td>
-         <td style={{ textAlign: 'center' }}>אג"ת/ארגון- כנגזרת מהנחיה ארגונית <br /> אג"ת/תכנון- כנגזרת מחליפיות משאבי כ"א</td>
-      </tr>
-   </tbody>
-</table>
+         <tr>
+            <td style={{ textAlign: 'center' }}>ראשוני</td>
+            <td style={{ textAlign: 'center' }}>אג"ת/ארגון</td>
+            <td style={{ textAlign: 'center' }}>-------</td>
+            <td style={{ textAlign: 'center' }}>אג"ת/ארגון- כנגזרת מהנחיה ארגונית <br /> אג"ת/תכנון- כנגזרת מחליפיות משאבי כ"א</td>
+         </tr>
+      </tbody>
+   </table>
+</Bleed>
 )
