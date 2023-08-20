@@ -6,13 +6,17 @@ title: יסודות התקינה ומערכת תוRP
 
 פרק זה יסביר אודות עולם התקינה ומערכת התוRP
 
-
+import toarp from 'components/toarp.png'
+import like from 'components/like.png'
+import bizur from 'components/bizur.png'
+import squad from 'components/squad.png'
+import retro from 'components/retro.png'
 import { Cards, Card } from 'nextra/components'
  
 <Cards>
-  <Card style={{fontSize: '18px'}} title="מערכת תוRP" href="/tkinatoarp/toarp"/>
-  <Card style={{fontSize: '18px'}} title='תקנון נכון' href="/tkinatoarp/goodteken"/>
-  <Card style={{fontSize: '18px'}} title='תקינה לא מבוזרת' href="/tkinatoarp/bizur"/>
-  <Card style={{fontSize: '18px'}} title='יחידת רישום' href="/tkinatoarp/unit"/>
-  <Card style={{fontSize: '18px'}} title='שינויי רטרו בתוRP' href="/tkinatoarp/retro"/>
+  <Card style={{fontSize: '18px'}} title="מערכת תוRP" href="/tkinatoarp/toarp" icon={<img src={toarp.src} height="28" width="28" />}   />
+  <Card style={{fontSize: '18px'}} title='תקנון נכון' href="/tkinatoarp/goodteken" icon={<img src={like.src} height="28" width="28" />} />
+  <Card style={{fontSize: '18px'}} title='תקינה לא מבוזרת' href="/tkinatoarp/bizur" icon={<img src={bizur.src} height="28" width="28" />}/>
+  <Card style={{fontSize: '18px'}} title='יחידת רישום (יח"ר)' href="/tkinatoarp/unit" icon={<img src={squad.src} height="28" width="28" />}/>
+  <Card style={{fontSize: '18px'}} title='שינויי רטרו בתוRP' href="/tkinatoarp/retro" icon={<img src={retro.src} height="28" width="28" />}/>
 </Cards>
