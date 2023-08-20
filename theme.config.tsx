@@ -63,6 +63,10 @@ const config: DocsThemeConfig = {
       return {
         titleTemplate: '%s - תוא"ר',
       } 
+    else 
+      return {
+        titleTemplate: '%s'
+      }
   },
   gitTimestamp: null // keep null to hide last updated
 }
