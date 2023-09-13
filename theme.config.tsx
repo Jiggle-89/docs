@@ -35,6 +35,7 @@ const config: DocsThemeConfig = {
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" href={documentation.src} />
+      <link rel="apple-touch-icon-precomposed" href={documentation.src} sizes="180x180" />
     </>
     // insert favicon here in the future using <link rel="icon" href="agatIcon.src"> for example
   ),
