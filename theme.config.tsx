@@ -1,13 +1,13 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
-import webIcon from './components/smartphone.png'
+import documentation from 'components/documentation.png'
 import agatIcon from './components/agat.png'
 import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
   logo: <>
     <img src={agatIcon.src} alt="landIcon" height="35px" width="35px"/>
-    <span style={{marginRight: '5px', fontSize: '16px'}}>אוגדן תקינה וארגון</span>
+    <span style={{marginRight: '5px', fontSize: '16px'}}>אוגדן תוא"ר ומשאבי כ"א</span>
   </>,
   // chat: {
   //   link: 'https://toarpquiz.web.app',
@@ -34,6 +34,7 @@ const config: DocsThemeConfig = {
   head: (
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href={documentation.src} />
     </>
     // insert favicon here in the future using <link rel="icon" href="agatIcon.src"> for example
   ),
@@ -61,7 +62,7 @@ const config: DocsThemeConfig = {
     const {asPath} = useRouter()
     if (asPath != '/')
       return {
-        titleTemplate: '%s - תוא"ר',
+        titleTemplate: '%s - אוגדן',
       } 
     else 
       return {
