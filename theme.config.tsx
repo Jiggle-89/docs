@@ -18,7 +18,8 @@ const config: DocsThemeConfig = {
   footer: {
     text: (
       <div style={{textAlign: 'center', justifyContent: 'center'}}>
-        <span>תקינה וארגון בצה"ל</span>
+        <span>תקינה ארגון ומשאבי כ"א בצה"ל</span>
+        <small>פותח ע"י אסף שפר </small>
       </div>
     ),
   },
@@ -35,7 +36,7 @@ const config: DocsThemeConfig = {
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" href={documentation.src} />
-      <link rel="apple-touch-icon-precomposed" href={documentation.src} sizes="180x180" />
+      <link rel="apple-touch-icon" href={documentation.src} />
     </>
     // insert favicon here in the future using <link rel="icon" href="agatIcon.src"> for example
   ),
