@@ -2,6 +2,8 @@
 title: תקנים זמניים
 ---
 
+import orgflow from 'components/orgflow.png'
+
 # תקנים זמניים
 
 ## כללי
@@ -44,7 +46,45 @@ title: תקנים זמניים
 
 ## תהליך זרימה
 
-להוסיף
+<img src={orgflow.src} />
 
 ## נספח א'
+
+<FlowPage2 />
+
+
+
+
+export const FlowPage2 = () => (
+   <table>
+      <tbody>
+
+         <tr>
+            <th rowSpan="2" style={{textAlign: "center"}}>מס"ד</th>
+            <th colSpan="2" style={{textAlign: "center"}}></th>
+            <th colSpan="9" style={{textAlign: "center"}}>מאפייני תקן</th>
+            <th colSpan="2" style={{textAlign: "center"}}>הנחיות למימוש 2020-2021</th>
+         </tr>
+         <tr>
+            <th style={{textAlign: "center"}}>שם פרויקט</th>
+            <th style={{textAlign: "center"}}>כפיפות פיקודית</th>
+            <th style={{textAlign: "center"}}>שם יחידה</th>
+            <th style={{textAlign: "center"}}>תת סוג תקן</th>
+            <th style={{textAlign: "center"}}>דרגה</th>
+            <th style={{textAlign: "center"}}>זיהוי משרה</th>
+            <th style={{textAlign: "center"}}>שם משרה</th>
+            <th style={{textAlign: "center"}}>סוג זמניות</th>
+            <th style={{textAlign: "center"}}>תאריך זמניות</th>
+            <th style={{textAlign: "center"}}>מקור זמניות</th>
+            <th style={{textAlign: "center"}}>מונה הקצאה</th>
+            <th style={{textAlign: "center"}}>תקינה</th>
+            <th style={{textAlign: "center"}}>שיאים</th>
+         </tr>
+
+
+
+
+      </tbody>
+   </table>
+)
 

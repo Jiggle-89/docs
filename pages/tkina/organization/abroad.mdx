@@ -2,6 +2,9 @@
 title: תקינת חו"ל
 ---
 
+import arrows from 'components/arrows.png'
+import abroadtekens from 'components/abroadtekens.png'
+
 # תקינת חו"ל
 
 ## כללי
@@ -47,4 +50,137 @@ title: תקינת חו"ל
 
 2) לומדים בכירים בחו"ל יאושרו ע"י מחה"ס במסגרת דיון בראשות הרמטכ"ל (שיא לומדים.) 
 
+
+## טבלת נוהל אישור תקני נס"ח ארוך
+
+<TekenTable />
+
+<br />
+
+<img src={arrows.src} />
+
+
+## טבלת הצגת דרישה לתקני חו"ל
+
+להלן טבלה למילוי להצגת דרישות הגופים לתקני חו"ל במסגרת הת"ע הארגונית:
+
+<br />
+
+<img src={abroadtekens.src} />
+
+
+
+
+
+
+export const TekenTable = () => (
+   <table>
+      <tbody>
+
+         <tr>
+
+            <th style={{textAlign: "center"}}>ספ'</th>
+            <th style={{textAlign: "center"}}>פעולה</th>
+            <th style={{textAlign: "center"}}>באחריות</th>
+            <th style={{textAlign: "center"}}>עיתוי</th>
+            <th style={{textAlign: "center"}}>הערות</th>
+
+         </tr>
+ 
+         <tr>
+
+            <th style={{textAlign: "center"}}>1</th>
+            <th style={{textAlign: "center"}}>הצגת צרכים</th>
+            <th style={{textAlign: "center"}}>זרועות ואגפים</th>
+            <th style={{textAlign: "center"}}>אוגוסט</th>
+            <th style={{textAlign: "center"}}>יבוצע במסגרת הצגת ת"ע ארגונית במחלקת הארגון.
+הצגת תקנים קיימים בחו"ל (בדגש על תקנים 3-5
+שנים ומעלה).
+הצגת בקשות לשינויים (תקינה חדשה, החזרת בע"ת)
+ע"פ פורמט.</th>
+
+         </tr>
+ 
+         <tr>
+
+            <th style={{textAlign: "center"}}>2</th>
+            <th style={{textAlign: "center"}}>בחינה ארגונית</th>
+            <th style={{textAlign: "center"}}>ענף ארגוני רלוונטי במחלקת הארגון</th>
+            <th style={{textAlign: "center"}}>אוגוסט</th>
+            <th style={{textAlign: "center"}}>שיקולים לבחינה ארגונית:
+מאפייני המשימה/ פרויקט מהות (פלט' חדשה,
+שת"פ...), עלות, זמן.
+תקינה קיימת לתמיכה במשימה/ פרויקט (בארץ
+ובחו"ל).
+ייעוד התפקיד</th>
+
+         </tr>
+ 
+         <tr>
+
+            <th style={{textAlign: "center"}}>3</th>
+            <th style={{textAlign: "center"}}>אישור עקרוני רמ"ח הארגון לתקינה</th>
+            <th style={{textAlign: "center"}}>ענף ארגוני רלוונטי במחלקת הארגון</th>
+            <th style={{textAlign: "center"}}>ספטמבר</th>
+            <th style={{textAlign: "center"}}>-</th>
+
+         </tr>
+ 
+         <tr>
+
+            <th style={{textAlign: "center"}}>4</th>
+            <th style={{textAlign: "center"}}>חישוב עלות התקינה</th>
+            <th style={{textAlign: "center"}}>זרועות ואגפים מול מדור מעבר חו"ל קש"ח</th>
+            <th style={{textAlign: "center"}}>ספטמבר</th>
+            <th style={{textAlign: "center"}}>חישוב והצגת עלות</th>
+
+         </tr>
+ 
+         <tr>
+
+            <th style={{textAlign: "center"}}>5</th>
+            <th style={{textAlign: "center"}}>אישור תקציב לשינויי התקנים </th>
+            <th style={{textAlign: "center"}}>ענף תכנון בשיתוף יועכ"ל</th>
+            <th style={{textAlign: "center"}}>אוקטובר-פברואר</th>
+            <th style={{textAlign: "center"}}>במסגרת דיוני ת"ע. וידוא עמידת גוף בנק"ע נס"ח</th>
+
+         </tr>
+ 
+         <tr>
+
+            <th style={{textAlign: "center"}}>6</th>
+            <th style={{textAlign: "center"}}>אישור שינויי התקנים בחו"ל ע"י ר' אג"ת </th>
+            <th style={{textAlign: "center"}}>מחלקת הארגון</th>
+            <th style={{textAlign: "center"}}>פברואר</th>
+            <th style={{textAlign: "center"}}>הצגת המלצה ארגונית ותקציבית</th>
+
+         </tr>
+ 
+         <tr>
+
+            <th style={{textAlign: "center"}}>7</th>
+            <th style={{textAlign: "center"}}>פרסום הנחיה ארגונית</th>
+            <th style={{textAlign: "center"}}>ענף ארגוני רלוונטי במחלקת הארגון</th>
+            <th style={{textAlign: "center"}}>מרץ</th>
+            <th style={{textAlign: "center"}}>-</th>
+
+         </tr>
+
+         <tr>
+
+            <th style={{textAlign: "center"}}>8</th>
+            <th style={{textAlign: "center"}}>מימוש במערכות</th>
+            <th style={{textAlign: "center"}}>הגוף הדורש, עתכ"א ,ענף תו"ם, משהב"ט </th>
+            <th style={{textAlign: "center"}}>מרץ</th>
+            <th style={{textAlign: "center"}}>הזנה במערכת תוארפי- הגוף הדורש/ענף תו"ם (במידה והתקנים אינם מבוזרים), הזנת שיאים- עתכ"א, הזנה במערכות משהב"ט- משהב"ט</th>
+
+         </tr>
+ 
+
+ 
+         
+
+      </tbody>
+   </table>
+)
 
