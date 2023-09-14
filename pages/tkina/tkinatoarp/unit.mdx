@@ -112,10 +112,157 @@ import {Callout} from 'nextra/components'
 
 4) מחיקת היחידה בפועל תתבצע לאחר כ- 90 ימים, לאור הסעיף הנ"ל. 
 
-## נספח א'
+## קריטריונים להגדרת יעוד יחידה בחירום
 
-להוסיף את הטבלה
+1.	שיקוף קדמיות היחידה בשגרה ובחירום, כלומר הסיכון למגע עם האויב ולהימצאות תחת אש (מתוף פ.מ הארגון) 
 
-## נספח ב' 
+2.	יעוד היחידה מתבטא בשם היעוד ובמספור, ככל שהמספור יותר נמוך היחידה יותר קדמית:  לחימה 2-0 עורפי 4-3   
 
-גם להוסיף טבלה
+3.	יעוד היחידה בחירום נדרש להיות תואם ליעודה בפק"א והוא משפיע על הזנת כ"א מילואים ליחידה לסיווגה. 
+
+
+<EmergencyTable />
+
+## מאפייני היח"ר לפתיחת יחידה
+
+<UnitTable />
+
+
+
+export const EmergencyTable = () => (
+   <table>
+      <tbody>
+
+         <tr>
+            <th style={{textAlign: "center"}}>סימול היעוד</th>
+            <th style={{textAlign: "center"}}>שם היעוד</th>
+            <th style={{textAlign: "center"}}>מהות יעוד היחידה בחירום</th>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>0</td>
+            <td style={{textAlign: "center"}}>קדמי ראשון</td>
+            <td style={{textAlign: "center"}}>יחידה המיועדת לחתור למגע עם האויב או המיועדת לסייע תחת אש ליחידות לוחמות   </td>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>1</td>
+            <td style={{textAlign: "center"}}>קדמי שני</td>
+            <td style={{textAlign: "center"}}>יחידת סיוע ליחידות הלוחמות בשטחים קדמיים, אך לא תחת אש, תוך כדי התפתחות הלחימה   </td>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>2</td>
+            <td style={{textAlign: "center"}}>קדמי שלישי</td>
+            <td style={{textAlign: "center"}}>יחידה המיועדת לאבטח שטחים קדמיים או לספק שירותים ולוגיסטיקה ליחידות הנמצאות בחזית, תוך סבירות נמוכה להיתקלות באויב </td>
+         </tr>
+         
+         <tr>
+            <td style={{textAlign: "center"}}>3</td>
+            <td style={{textAlign: "center"}}>עורפי ראשון</td>
+            <td style={{textAlign: "center"}}>יחידה עורפית שיעודה לאבטח מתקנים צבאיים, לעסוק בהגנת העורף הצבאי והאזרחי, לתת שירות ולהיות רמה מנהלתית עורפית בפיקוד/מטכ"ל </td>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>4</td>
+            <td style={{textAlign: "center"}}>עורפי שני</td>
+            <td style={{textAlign: "center"}}>יחידות שייעודן לפקח, לקיים שליטה ולהבטיח את המשך קיומו של העורף האזרחי  </td>
+         </tr>
+
+      </tbody>
+   </table>
+)
+
+export const UnitTable = () => (
+   <table>
+      <tbody>
+
+         <tr>
+            <th style={{textAlign: "center"}}>מאפיין</th>
+            <th style={{textAlign: "center"}}>דוגמא</th>
+            <th style={{textAlign: "center"}}>הערות/דגשים</th>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>שם יחידה קצר</td>
+            <td style={{textAlign: "center"}}>מפקדת זרוע היבשה 23</td>
+            <td style={{textAlign: "center"}}>יכול לכלול גם את שם היחידה לדוג' גדוד 33 'קרקל'</td>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>מספר יחידה</td>
+            <td style={{textAlign: "center"}}>23</td>
+            <td style={{textAlign: "center"}}>שלב ראשון בסבב האישורים לתאם מול ר' תא סד"כ יח' סדיר בין 1-999 יח' מיל' 1000-9999</td>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>מת"מי יחידה</td>
+            <td style={{textAlign: "center"}}>-</td>
+            <td style={{textAlign: "center"}}>נקבע ע"י אכ"א לאחר פתיחת היח"ר</td>
+         </tr>
+         
+         <tr>
+            <td style={{textAlign: "center"}}>כפיפות ברגיעה</td>
+            <td style={{textAlign: "center"}}>מז"י</td>
+            <td style={{textAlign: "center"}}>כפיפות היחידה בעץ הסד"כ</td>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>כפיפות בחירום</td>
+            <td style={{textAlign: "center"}}>פצ"ן</td>
+            <td style={{textAlign: "center"}}>לא חייב להיות זהה בשגרה ובחירום</td>
+         </tr>
+ 
+         <tr>
+            <td style={{textAlign: "center"}}>בניין כוח יחידה</td>
+            <td style={{textAlign: "center"}}>מז"י</td>
+            <td style={{textAlign: "center"}}>-</td>
+         </tr>
+ 
+         <tr>
+            <td style={{textAlign: "center"}}>חיל יחידה</td>
+            <td style={{textAlign: "center"}}>חי"ר</td>
+            <td style={{textAlign: "center"}}>-</td>
+         </tr>
+ 
+         <tr>
+            <td style={{textAlign: "center"}}>מדרג יחידה</td>
+            <td style={{textAlign: "center"}}>אוגדה/גדוד/חטיבה</td>
+            <td style={{textAlign: "center"}}>בהתאם ליעוד היחידה</td>
+         </tr>
+ 
+         <tr>
+            <td style={{textAlign: "center"}}>אפיון ראשי</td>
+            <td style={{textAlign: "center"}}>גדוד תקשוב/חי"ר/מרכז לוגיסטי</td>
+            <td style={{textAlign: "center"}}>בהתאם לעיסוקה הראשי</td>
+         </tr>
+ 
+         <tr>
+            <td style={{textAlign: "center"}}>יעוד יחידה</td>
+            <td style={{textAlign: "center"}}>מהות היחידה בחירום בין 0-4</td>
+            <td style={{textAlign: "center"}}>מאושר ע"י אג"ת בתיאום אמ"ץ. מוזן במערכות ע"י אכ"א/חתומכ"א/עתו"ם/מדור או"ר</td>
+         </tr>
+
+         <tr>
+            <td style={{textAlign: "center"}}>מעמד יחידה</td>
+            <td style={{textAlign: "center"}}>סדיר/מילואים/מעורב</td>
+            <td style={{textAlign: "center"}}>בהתאם לרוב הסד"כ היחידתי</td>
+         </tr>
+  
+         <tr>
+            <td style={{textAlign: "center"}}>סמכות תקציבית</td>
+            <td style={{textAlign: "center"}}>מז"י/חמ"ן/מעו"ז</td>
+            <td style={{textAlign: "center"}}>-</td>
+         </tr>
+  
+         <tr>
+            <td style={{textAlign: "center"}}>פריסה</td>
+            <td style={{textAlign: "center"}}>מחנה קסטינה</td>
+            <td style={{textAlign: "center"}}>-</td>
+         </tr>
+  
+  
+
+      </tbody>
+   </table>
+)
