@@ -2,6 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import documentation from 'components/documentation.png'
 import agatIcon from './components/agat.png'
+import toarp from './components/smartphone.png'
 import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
@@ -9,18 +10,16 @@ const config: DocsThemeConfig = {
     <img src={agatIcon.src} alt="landIcon" height="35px" width="35px"/>
     <span style={{marginRight: '5px', fontSize: '16px'}}>אוגדן תוא"ר ומשאבי כ"א</span>
   </>,
-  // chat: {
-  //   link: 'https://toarpquiz.web.app',
-  //   icon: (
-  //     <img src={webIcon.src} alt="landIcon" height="30px" width="30px"/>
-  //   )
-  // },
+  chat: {
+    link: 'https://toarpquiz.web.app',
+    icon: (
+      <img src={toarp.src} height="30px" width="30px"/>
+    )
+  },
   footer: {
     text: (
-      <div style={{textAlign: 'center', justifyContent: 'center'}}>
-        <span>תקינה ארגון ומשאבי כ"א בצה"ל</span>
-        <br />
-        <small>פותח ע"י אסף שפר אג"ת/תוRP</small>
+      <div style={{display: 'flex',textAlign: 'center', justifyContent: 'center', height: '100%', width: '100%'}}>
+        <p>פותח ע"י אסף שפר אג"ת/תוRP</p>
       </div>
     ),
   },
