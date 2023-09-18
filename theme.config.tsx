@@ -19,7 +19,8 @@ const config: DocsThemeConfig = {
     text: (
       <div style={{textAlign: 'center', justifyContent: 'center'}}>
         <span>תקינה ארגון ומשאבי כ"א בצה"ל</span>
-        <small>פותח ע"י אסף שפר </small>
+        <br />
+        <small>פותח ע"י אסף שפר אג"ת/תוRP</small>
       </div>
     ),
   },
@@ -50,6 +51,7 @@ const config: DocsThemeConfig = {
   editLink: { // keep null to hide the edit this page button
     text: null
   },
+  docsRepositoryBase: 'https://github.com/Jiggle-89/docs/tree/main', // repo URL for the pages directory
   sidebar: {
     toggleButton: true,
     defaultMenuCollapseLevel: 1
