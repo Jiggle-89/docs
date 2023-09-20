@@ -7,10 +7,14 @@
   "index": {
     "title": "ברוכים הבאים",
     "theme": {
-      "footer": true
+      "footer": true,
+      "layout": "full"
     }
   },
   "tkina": {
     "title": "תקינה וארגון"
+  },
+  "separator": {
+    "type": "separator"
   }
 }
