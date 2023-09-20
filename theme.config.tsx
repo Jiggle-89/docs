@@ -53,7 +53,8 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/Jiggle-89/docs/tree/main', // repo URL for the pages directory
   sidebar: {
     toggleButton: true,
-    defaultMenuCollapseLevel: 2
+    defaultMenuCollapseLevel: 2,
+    autoCollapse: true
   },
   search: {
     placeholder: 'חפש...',
