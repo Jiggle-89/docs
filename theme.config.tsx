@@ -2,7 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import documentation from 'components/documentation.png'
 import agatIcon from './components/agat.png'
-import toarp from './components/smartphone.png'
+import smartphone from './components/smartphone.png'
 import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
@@ -13,7 +13,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://toarpquiz.web.app',
     icon: (
-      <img src={toarp.src} height="30px" width="30px"/>
+      <img src={smartphone.src} height="30px" width="30px"/>
     )
   },
   footer: {
