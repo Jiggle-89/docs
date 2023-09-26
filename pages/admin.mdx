@@ -1,0 +1,32 @@
+import {useEffect, useState} from 'react'
+
+import { MDXEditor } from '@mdxeditor/editor/MDXEditor'
+import { headingsPlugin } from '@mdxeditor/editor/plugins/headings'
+import { listsPlugin } from '@mdxeditor/editor/plugins/lists'
+import { quotePlugin } from '@mdxeditor/editor/plugins/quote'
+import { thematicBreakPlugin } from '@mdxeditor/editor/plugins/thematic-break'
+
+
+export function App() {
+
+  const [content, setContent] = useState('')
+
+  useEffect(() => {
+    fetch('https://api.github.com/repos/Jiggle-89/docs/contents/pages/index.mdx')
+      .then(response => response.json())
+      .then(data => {
+        const content = data.content
+        const decodedContent = decodeURIComponent(escape(window.atob(content))); // decode base-64 to original text in hebrew
+        setContent(decodedContent)
+      })
+  }, [])
+  
+  console.log(content)
+  return (
+    <>
+      {content && <MDXEditor markdown={content} plugins={[headingsPlugin(), listsPlugin(), quotePlugin(), thematicBreakPlugin()]} />}
+    </>
+  )
+}
+
+<App />
