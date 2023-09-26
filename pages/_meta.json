@@ -16,5 +16,8 @@
   },
   "separator": {
     "type": "separator"
+  },
+  "admin": {
+    "display": "hidden"
   }
 }

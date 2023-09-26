@@ -47,8 +47,9 @@ const config: DocsThemeConfig = {
   feedback: { // keep null to hide feedback button
     content: null
   },
-  editLink: { // keep null to hide the edit this page button
-    text: null
+  editLink: {
+    // text: null keep null to hide the link
+    text: 'ערוך דף'
   },
   docsRepositoryBase: 'https://github.com/Jiggle-89/docs/tree/main', // repo URL for the pages directory
   sidebar: {
