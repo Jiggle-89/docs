@@ -18,6 +18,10 @@
     "type": "separator"
   },
   "admin": {
-    "display": "hidden"
+    "display": "hidden",
+    "theme": {
+      "pagination": false,
+      "toc": false
+    }
   }
 }
