@@ -48,10 +48,9 @@ const config: DocsThemeConfig = {
     content: null
   },
   editLink: {
-    // text: null keep null to hide the link
-    text: 'ערוך דף'
+    text: null
   },
-  docsRepositoryBase: 'https://github.com/Jiggle-89/docs/tree/main', // repo URL for the pages directory
+  // docsRepositoryBase: 'https://github.com/Jiggle-89/docs/tree/main', // repo URL for the pages directory
   sidebar: {
     toggleButton: true,
     defaultMenuCollapseLevel: 2,

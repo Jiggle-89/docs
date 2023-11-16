@@ -7,8 +7,7 @@
   "index": {
     "title": "ברוכים הבאים",
     "theme": {
-      "footer": true,
-      "layout": "full"
+      "footer": true
     }
   },
   "tkina": {
