@@ -38,17 +38,19 @@ const config: DocsThemeConfig = {
       <link rel="icon" href={documentation.src} />
       <link rel="apple-touch-icon" href={documentation.src} />
     </>
-    // insert favicon here in the future using <link rel="icon" href="agatIcon.src"> for example
   ),
   toc: {
     title: 'תוכן עניינים',
-    float: true
+    float: true,
   },
   feedback: { // keep null to hide feedback button
     content: null
   },
-  editLink: {
-    text: null
+  editLink: { // making a custom edit link breaking nextra's git management
+    // ! change to actual firebase app in the future
+    component: () => (
+      <a href="/" target="_blank" rel="noreferrer noopener">ערוך דף</a>
+    ),
   },
   // docsRepositoryBase: 'https://github.com/Jiggle-89/docs/tree/main', // repo URL for the pages directory
   sidebar: {
