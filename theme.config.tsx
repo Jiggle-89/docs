@@ -47,10 +47,14 @@ const config: DocsThemeConfig = {
     content: null
   },
   editLink: { // making a custom edit link breaking nextra's git management
-    // ! change to actual firebase app in the future
-    component: () => (
-      <a href="/" target="_blank" rel="noreferrer noopener">ערוך דף</a>
-    ),
+    component: () => {
+      const router = useRouter();
+      const newAppUrl = 'https://docseditor.web.app';
+
+      return (
+        <a href={`${newAppUrl}${router.asPath}`} target="_blank" rel="noreferrer noopener">ערוך דף</a>
+      )
+    }
   },
   // docsRepositoryBase: 'https://github.com/Jiggle-89/docs/tree/main', // repo URL for the pages directory
   sidebar: {
