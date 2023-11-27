@@ -54,7 +54,7 @@ const config: DocsThemeConfig = {
       const lastPart = parts[parts.length - 1];
 
       return (
-        <a href={`${newAppUrl}${lastPart}`} target="_blank" rel="noreferrer noopener">ערוך דף</a>
+        <a href={`${newAppUrl}/${lastPart}`} target="_blank" rel="noreferrer noopener">ערוך דף</a>
       )
     }
   },
