@@ -50,9 +50,11 @@ const config: DocsThemeConfig = {
     component: () => {
       const router = useRouter();
       const newAppUrl = 'https://docseditor.web.app';
+      const parts = router.asPath.split('/');
+      const lastPart = parts[parts.length - 1];
 
       return (
-        <a href={`${newAppUrl}${router.asPath}`} target="_blank" rel="noreferrer noopener">ערוך דף</a>
+        <a href={`${newAppUrl}${lastPart}`} target="_blank" rel="noreferrer noopener">ערוך דף</a>
       )
     }
   },
@@ -79,7 +81,7 @@ const config: DocsThemeConfig = {
         titleTemplate: '%s'
       }
   },
-  gitTimestamp: null // keep null to hide last updated
+  gitTimestamp: null
 }
 
 export default config
