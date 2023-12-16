@@ -40,6 +40,7 @@ const config: DocsThemeConfig = {
       <meta name="apple-mobile-web-app-title" content="אוגדן" />
       <link rel="icon" href={documentation.src} />
       <link rel="apple-touch-icon" href={documentation.src} />
+      <link rel="manifest" href="/manifest.json" />
     </>
   ),
   toc: {
