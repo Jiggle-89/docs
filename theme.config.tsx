@@ -3,6 +3,7 @@ import { DocsThemeConfig } from 'nextra-theme-docs'
 import documentation from 'components/documentation.png'
 import agatIcon from './components/agat.png'
 import smartphone from './components/smartphone.png'
+import {Callout, Cards, Card, Tabs, Tab} from 'nextra/components'
 import { useRouter } from 'next/router'
 
 const config: DocsThemeConfig = {
@@ -30,7 +31,8 @@ const config: DocsThemeConfig = {
         dark: 'כהה',
         system: 'מערכת'
       }
-    }
+    },
+    component: null, // this hides the theme switch
   },
   head: (
     <>
@@ -61,6 +63,13 @@ const config: DocsThemeConfig = {
       )
     }
   },
+  components: {
+    Callout,
+    Cards,
+    Card,
+    Tabs,
+    Tab
+  },
   // docsRepositoryBase: 'https://github.com/Jiggle-89/docs/tree/main', // repo URL for the pages directory
   sidebar: {
     toggleButton: true,
@@ -84,7 +93,18 @@ const config: DocsThemeConfig = {
         titleTemplate: '%s'
       }
   },
-  gitTimestamp: null
+
+  gitTimestamp: ({ timestamp }) => {
+    const month = timestamp.toLocaleString("he-IL", { month: "long" });
+    const date = timestamp.getDate();
+    const year = timestamp.getFullYear();
+    return (
+      <>
+        עודכן לאחרונה בתאריך {date} ב{month} {year}
+      </>
+    );
+  }
+
 }
 
 export default config
