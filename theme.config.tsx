@@ -55,7 +55,7 @@ const config: DocsThemeConfig = {
   editLink: { // making a custom edit link breaking nextra's git management
     component: () => {
       const router = useRouter();
-      const newAppUrl = 'https://docseditor.web.app';
+      const newAppUrl = 'https://docseditor.web.app/edit';
       const parts = router.asPath.split('/');
       const lastPart = parts[parts.length - 1];
 
