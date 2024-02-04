@@ -3,5 +3,14 @@
     "theme": {
       "footer": false
     }
+  },
+  "structure": {
+    "title": "מבנה הצבא"
+  },
+  "orders": {
+    "title": "מדרג הפקודות בצה\"ל"
+  },
+  "regulation": {
+    "title": "עמ\"ט הרגולציה בצה\"ל"
   }
 }

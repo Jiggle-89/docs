@@ -15,12 +15,5 @@
   },
   "separator": {
     "type": "separator"
-  },
-  "admin": {
-    "display": "hidden",
-    "theme": {
-      "pagination": false,
-      "toc": false
-    }
   }
 }
