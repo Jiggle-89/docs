@@ -1,13 +1,14 @@
 {
   "building": {
-
+    "title": "בניין הכוח ועקרונות הארגון"
   },
   "orderstructure": {
-
+    "title": "מבנה הצבא ומדרג הפקודות"
   },
   "tkinatoarp": {
-
+    "title": "יסודות התקינה ומערכת תוRP"
   },
   "organization": {
+    "title": "תהליכי הארגון"
   }
 }

@@ -3,5 +3,11 @@
     "theme": {
       "footer": false
     }
+  },
+  "milorg":{
+    "title": "ארגון צבאי"
+  },
+  "plan": {
+    "title": "תהליך התכנון בצה\"ל"
   }
 }
