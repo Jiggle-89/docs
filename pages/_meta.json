@@ -15,5 +15,8 @@
   },
   "separator": {
     "type": "separator"
+  },
+  "peaks": {
+    "title": "שיאים בצה\"ל"
   }
 }
