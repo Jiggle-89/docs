@@ -1,1 +1,13 @@
-<p>בדיקה 123</p>
+import military from 'components/militaryman.png'
+import man from 'components/businessman.png'
+import hierarchy from 'components/hierarchy.png'
+
+# שיאים בצה"ל
+
+פרק זה יסביר על כל סוגי השיאים בצה"ל
+
+<Cards>
+  <Card style={{fontSize: '18px'}} title="שיאי קבע" href="/peaks/keva" icon={<img src={military.src} width="28" height="28" />} />
+  <Card style={{fontSize: '18px'}} title='שיאי אע"צ' href="/peaks/aaz" icon={<img src={man.src} width="28" height="28" />} />
+  <Card style={{fontSize: '18px'}} title='ניהול מסגרות כ"א קבע' href="/peaks/management" icon={<img src={hierarchy.src} width="28" height="28" />} />
+</Cards>
