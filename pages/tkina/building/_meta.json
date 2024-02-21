@@ -4,10 +4,13 @@
       "footer": false
     }
   },
-  "milorg":{
+  "milorg": {
     "title": "ארגון צבאי"
   },
   "plan": {
     "title": "תהליך התכנון בצה\"ל"
+  },
+  "asafking": {
+    "title": "אסף הוא מלך"
   }
 }
