@@ -53,16 +53,17 @@ const config: DocsThemeConfig = {
     content: null
   },
   editLink: { // making a custom edit link breaking nextra's git management
-    component: () => {
-      const router = useRouter();
-      const newAppUrl = 'https://docseditor.web.app/edit';
-      const parts = router.asPath.split('/');
-      const lastPart = parts[parts.length - 1];
+    //! component: () => { currently unwanted due to security
+    //!   const router = useRouter();
+    //!   const newAppUrl = 'https://docseditor.web.app/edit';
+    //!   const parts = router.asPath.split('/');
+    //!   const lastPart = parts[parts.length - 1];
 
-      return (
-        <a href={`${newAppUrl}/${lastPart}`} target="_blank" rel="noreferrer noopener">ערוך דף</a>
-      )
-    }
+    //!   return (
+    //!     <a href={`${newAppUrl}/${lastPart}`} target="_blank" rel="noreferrer noopener">ערוך דף</a>
+    //!   )
+    //! }
+    component: null
   },
   components: {
     Callout,
