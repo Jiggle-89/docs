@@ -10,5 +10,8 @@
   },
   "organization": {
     "title": "תהליכי הארגון"
+  },
+  "pressurecheck": {
+    "title": "בדיקת לחץ"
   }
 }
