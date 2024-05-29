@@ -1,10 +1,10 @@
 {
-    "short_name": "tkina",
-    "name": "tkina",
-    "scope": ".",
-    "start_url": "/",
-    "display": "standalone",
-    "orientation" : "portrait",
-    "theme_color": "#fcb61a",
-    "background_color": "#ffffff"
-  }
+  "short_name": "לומדת תוא\"ר ומשאבי כ\"א",
+  "name": "לומדת תקינה ארגון ומשאבי כ\"א",
+  "scope": ".",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation" : "portrait",
+  "theme_color": "#fcb61a",
+  "background_color": "#ffffff"
+}
