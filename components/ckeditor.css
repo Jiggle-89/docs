@@ -383,7 +383,7 @@ ol:not(.nx-mt-6) > li:not(.nx-mt-6) {
  ul ul ul ul {
     list-style-type: square;
 }
-ul:not(.nx-flex, .nx-ring-1) > li:not(.nx-mt-6) {
+ul:not(.nx-flex, .nx-ring-1, .nx-my-2) > li:not(.nx-mt-6, .nx-my-2) {
     margin-right: 1.5rem;
     margin-top: 1rem;
 }
