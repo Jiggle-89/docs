@@ -558,6 +558,6 @@ p { /* margin top for paragraphs below headings */
     margin-top: 1.5rem !important;
 }
 
-li > p, ol > p, ul > p { /* no margin if a p is nested under a li */
+li > p, ol > p, ul > p, div > p { /* no margin if a p is nested under a li */
     margin: 0 !important;
 }
