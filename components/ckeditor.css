@@ -561,3 +561,7 @@ p { /* margin top for paragraphs below headings */
 li > p, ol > p, ul > p, div > p { /* no margin if a p is nested under a li */
     margin: 0 !important;
 }
+
+.nx-transition-all ul, .nx-transition-all li {
+    list-style: none !important;
+}
