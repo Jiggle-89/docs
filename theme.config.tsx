@@ -32,7 +32,7 @@ const config: DocsThemeConfig = {
         system: 'מערכת'
       }
     },
-    component: null, // this hides the theme switch
+    // component: null, // this hides the theme switch
   },
   head: (
     <>

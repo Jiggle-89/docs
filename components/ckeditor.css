@@ -565,3 +565,6 @@ li > p, ol > p, ul > p, div > p { /* no margin if a p is nested under a li */
 .nx-transition-all ul, .nx-transition-all li {
     list-style: none !important;
 }
+html {
+    color-scheme: light !important;
+}
